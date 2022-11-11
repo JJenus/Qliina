@@ -1,6 +1,6 @@
 <script setup>
 	import { ref } from "vue";
-	import Laundry from "@/components/app/main/Laundry.vue";
+	import LaundryForm from "@/components/app/main/Laundry.vue";
 
 	let totalCost = 0;
 	let totalExpenses = 0;

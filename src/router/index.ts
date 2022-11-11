@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/views/app/Main.vue";
+import Error404Vue from "@/components/Error404.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,8 +11,13 @@ const router = createRouter({
 		},
 		{
 			path: "/app/main",
-			name: "freepicks",
+			name: "main",
 			component: Main,
+		},
+		{
+			path: "/:pathMatch(.*)*",
+			name: "NotFound",
+			component: Error404Vue,
 		},
 	],
 });
