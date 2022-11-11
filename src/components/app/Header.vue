@@ -75,9 +75,6 @@
 						class="btn btn-icon btn-sm btn-active-light-danger"
 					>
 						<i class="fas fs-2x fa-power-off me-2"></i>
-						<span class="d-md-inline-block d-none pl-4">
-							Logout</span
-						>
 					</a>
 				</div>
 				<!--end::logout-->

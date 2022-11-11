@@ -1,5 +1,5 @@
 <script setup>
-	const props = defineprops({
+	const props = defineProps({
 		index: {
 			required: true,
 		},

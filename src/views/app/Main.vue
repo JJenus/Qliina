@@ -300,7 +300,7 @@
 			</div>
 			<!--end::Wrapper-->
 
-			<Sidebar></Sidebar>
+			<SideBar></SideBar>
 		</div>
 		<!--end::Page-->
 	</div>

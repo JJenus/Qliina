@@ -2,10 +2,11 @@
 	import { ref } from "vue";
 	import Laundry from "@/components/app/main/Laundry.vue";
 
-
-	const totalCost = 0;
+	let totalCost = 0;
+	let totalExpenses = 0;
+	let totalIncome = 0;
 	const createClothesForm = [];
-
+	const addLaundry = ref(false);
 
 	function deleteLast() {
 		createClothesForm.pop();
@@ -85,7 +86,7 @@
 					data-kt-scroll-wrappers="#kt_sidebar_content"
 				>
 					<!--begin::New Product Form-->
-					<div class="d-none" id="kt_sidebar_shop_new_form">
+					<div v-if="addLaundry" id="kt_sidebar_shop_new_form">
 						<!--begin::Heading-->
 						<div class="d-flex flex-column text-center mb-10">
 							<h3 class="fs-2 fw-bolder mb-2">Add New Laundry</h3>
@@ -264,7 +265,7 @@
 								</button>
 								<button
 									type="reset"
-									id="kt_sidebar_shop_filter_form_btn"
+									@click="addLaundry = !addLaundry"
 									class="btn btn-color-gray-600 btn-active-light-primary fw-bolder px-8"
 								>
 									Discard
@@ -278,13 +279,13 @@
 					<!--end::New Product Form-->
 
 					<!--begin::Products Filter Form-->
-					<div id="kt_sidebar_shop_filter_form">
+					<div v-else id="kt_sidebar_shop_filter_form">
 						<!--begin::Heading-->
 						<div
 							class="d-flex flex-column text-center bg-light rounded py-8 px-5 mb-10"
 						>
 							<h3 class="fs-2 fw-bolder mb-2">
-								Create New Order
+								{{ "Hi, Maria" }}
 							</h3>
 							<span class="text-muted fs-6 fw-bolder"
 								>Make it Qliina</span
@@ -293,7 +294,7 @@
 								class="d-flex align-items-center d-flex-row justify-content-between"
 							>
 								<button
-									id="kt_sidebar_shop_new_form_btn"
+									@click="addLaundry = !addLaundry"
 									class="btn btn-primary btn-sm me-3 fw-bolder mx-auto px-5 mt-6"
 								>
 									Add laundry
@@ -304,7 +305,7 @@
 									id="kt_sidebar_add_expense_form_btn"
 									class="btn btn-primary btn-sm fw-bolder mx-auto px-5 mt-6"
 								>
-									Add Expense
+									Add Expenses
 								</button>
 							</div>
 						</div>
