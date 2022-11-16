@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/views/app/Main.vue";
-import Error404Vue from "@/components/Error404.vue";
+import Error404Vue from "@/views/Error404.vue";
 import LaundryVue from "@/views/app/Laundry.vue";
 
 const router = createRouter({
