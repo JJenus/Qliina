@@ -1,13 +1,13 @@
 <script setup>
 	import Header from "@/components/app/Header.vue";
-	import Footer from "@/components/app/Footer.vue";
+	import Footer from "@/components/Footer.vue";
 	import { ref } from "vue";
 
 	// Components
 	import SaveExpensesModal from "@/components/app/main/SaveExpensesModal.vue";
 	import Order from "@/components/app/main/Order.vue";
 	import SideBar from "@/components/app/main/SideBar.vue";
-	import Nav from "@/components/app/Nav.vue";
+	import Nav from "@/components/Nav.vue";
 
 	// Variables
 
