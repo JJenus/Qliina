@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/views/app/Main.vue";
 import Error404Vue from "@/components/Error404.vue";
+import LaundryVue from "@/views/app/Laundry.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,11 @@ const router = createRouter({
 			path: "/app/main",
 			name: "main",
 			component: Main,
+		},
+		{
+			path: "/app/laundry",
+			name: "laundry",
+			component: LaundryVue,
 		},
 		{
 			path: "/:pathMatch(.*)*",

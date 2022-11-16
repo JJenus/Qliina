@@ -7,6 +7,7 @@
 	import SaveExpensesModal from "@/components/app/main/SaveExpensesModal.vue";
 	import Order from "@/components/app/main/Order.vue";
 	import SideBar from "@/components/app/main/SideBar.vue";
+	import Nav from "@/components/app/Nav.vue"
 
 	// Variables
 
@@ -127,27 +128,7 @@
 								<!--end::Title-->
 							</div>
 							<!--end::Info-->
-							<!--begin::Nav-->
-							<div
-								class="d-flex align-items-center flex-nowrap text-nowrap overflow-auto py-1"
-							>
-								<a
-									href="main"
-									class="btn btn-active-accent fw-bolder active ms-3"
-									>Main</a
-								>
-								<a
-									href="laundry"
-									class="btn btn-active-accent fw-bolder"
-									>Laundry</a
-								>
-								<a
-									href="dashboard"
-									class="btn btn-active-accent fw-bolder ms-3"
-									>Dashboard</a
-								>
-							</div>
-							<!--end::Nav-->
+							<Nav></Nav>
 						</div>
 					</div>
 					<!--end::toolbar-->
