@@ -1,6 +1,6 @@
 <script setup>
 	import Header from "@/components/app/Header.vue";
-	import Footer from "@/components/app/Footer.vue";
+	import Footer from "@/components/Footer.vue";
 	import { ref } from "vue";
 
 	// Components

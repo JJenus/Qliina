@@ -7,7 +7,7 @@
 	import SaveExpensesModal from "@/components/app/main/SaveExpensesModal.vue";
 	import Order from "@/components/app/main/Order.vue";
 	import SideBar from "@/components/app/main/SideBar.vue";
-	import Nav from "@/components/Nav.vue";
+	import Nav from "@/components/app/Nav.vue";
 
 	// Variables
 

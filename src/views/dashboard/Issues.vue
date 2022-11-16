@@ -1,8 +1,74 @@
 <script setup>
 	import Header from "@/components/dashboard/Header.vue";
-    import Nav from "@/components/Nav.vue"
-    import Footer from "@/components/Footer.vue"
+	import NavModal from "@/components/dashboard/NavModal.vue";
+	import Footer from "@/components/Footer.vue";
+	import IssueCard from "@/components/dashboard/issues/IssueCard.vue";
 
+	const inputs = {
+		search: "Bea",
+	};
+	const user = null;
+	const search = {
+		limit: 10,
+		result: [],
+	};
+	const issues = [];
+
+	function searchDB(limit, offset) {
+		$("#btn-load-more").attr("data-kt-indicator", "on");
+		$.ajax({
+			url: base_url + "/search/issues",
+			method: "POST",
+			data: { limit: limit, offset: offset, q: this.inputs.search },
+			success: (res) => {
+				console.log(res);
+				if (offset == 0) {
+					this.issues = [];
+				}
+				this.search.result = res;
+				this.issues.push(...res);
+			},
+			error: (err) => {
+				console.log(err);
+			},
+		}).always(() => {
+			$("#btn-load-more").attr("data-kt-indicator", null);
+		});
+	}
+
+	function loadIssues() {
+		$("#btn-load-more").attr("data-kt-indicator", "on");
+		$.ajax({
+			url: base_url + "/issues",
+			method: "GET",
+			success: (res) => {
+				console.log(res);
+				this.issues = res;
+			},
+			error: (err) => {
+				console.log(err);
+			},
+		}).always(() => {
+			$("#btn-load-more").attr("data-kt-indicator", null);
+		});
+	}
+
+	function getUser() {
+		$.ajax({
+			url: `${base_url}/app/user`,
+			method: "GET",
+			success: (res) => {
+				if (res.status) {
+					console.log(res.data);
+					this.user = res.data;
+					this.loadIssues();
+				}
+			},
+			error: (err) => {
+				console.log(err);
+			},
+		});
+	}
 </script>
 
 <template>
@@ -109,11 +175,11 @@
 					</div>
 					<!--begin::Row-->
 					<div class="row p-10 g-0 g-xl-5 g-xxl-8">
-						<issue-card
+						<issueCard
 							v-for="issue in issues"
 							:user="user"
 							:issue="issue"
-						></issue-card>
+						></issueCard>
 					</div>
 					<!--end::Row-->
 					<div v-if="search.result.length === search.limit" class="">
@@ -131,9 +197,8 @@
 							</span>
 						</button>
 					</div>
-					<Nav></Nav>
 					<!--begin::Modals-->
-
+					<NavModal></NavModal>
 					<!--end::Modals-->
 				</div>
 				<!--end::Container-->
