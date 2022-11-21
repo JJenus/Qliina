@@ -3,6 +3,8 @@ import Main from "@/views/app/Main.vue";
 import Error404Vue from "@/views/Error404.vue";
 import LaundryVue from "@/views/app/Laundry.vue";
 import IssuesVue from "@/views/dashboard/Issues.vue";
+import LaundryDetails from "@/views/dashboard/LaundryDetails.vue";
+
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,8 +25,13 @@ const router = createRouter({
 		},
 		{
 			path: "/dashboard/issues",
-			name: "laundry",
+			name: "issues",
 			component: IssuesVue,
+		},
+		{
+			path: "/dashboard/laundry",
+			name: "adminlaundry",
+			component: LaundryDetails,
 		},
 		{
 			path: "/:pathMatch(.*)*",
