@@ -4,6 +4,7 @@ import Error404Vue from "@/views/Error404.vue";
 import LaundryVue from "@/views/app/Laundry.vue";
 import IssuesVue from "@/views/dashboard/Issues.vue";
 import LaundryDetails from "@/views/dashboard/LaundryDetails.vue";
+import HireVue from "@/views/dashboard/Hire.vue";
 
 
 const router = createRouter({
@@ -32,6 +33,11 @@ const router = createRouter({
 			path: "/dashboard/laundry",
 			name: "adminlaundry",
 			component: LaundryDetails,
+		},
+		{
+			path: "/dashboard/hire",
+			name: "hire",
+			component: HireVue,
 		},
 		{
 			path: "/:pathMatch(.*)*",
