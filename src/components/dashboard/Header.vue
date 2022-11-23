@@ -9,7 +9,7 @@
 	>
 		<!--begin::Container-->
 		<div
-			class="container d-flex align-items-stretch justify-content-between"
+			class="container d-flex py-5 align-items-stretch justify-content-between"
 		>
 			<!--begin::Left-->
 			<div class="d-flex align-items-center">
@@ -155,9 +155,9 @@
 						<div class="row g-0">
 							<a
 								href="/app/dashboard/account"
-								class="border-bottom border-end text-center py-10 btn btn-active-color-primary rounded-0"
+								class="border-bottom col border-end text-center py-10   btn btn-active-color-primary rounded-0"
 							>
-								<!--begin::Svg Icon | path: icons/stockholm/Layout/Layout-4-blocks.svg-->
+								<!-- begin::Svg Icon | path: icons/stockholm/Layout/Layout-4-blocks.svg -->
 								<span class="svg-icon svg-icon-3x me-n1">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -197,12 +197,12 @@
 								</span>
 								<!--end::Svg Icon-->
 								<span class="fw-bolder fs-6 d-block pt-3"
-									>My Profile</span
+									> Profile</span
 								>
 							</a>
 							<a
 								href="/app/dashboard/settings"
-								class="col border-bottom text-center py-10 btn btn-active-color-primary rounded-0"
+								class="col border-bottom border-end text-center py-10   btn btn-active-color-primary rounded-0"
 							>
 								<!--begin::Svg Icon | path: icons/stockholm/General/Settings-1.svg-->
 								<span class="svg-icon svg-icon-3x me-n1">
@@ -245,7 +245,7 @@
 							</a>
 							<a
 								href=""
-								class="col text-center border-end py-10 btn btn-active-color-primary rounded-0"
+								class="col text-center border-end py-10   btn btn-active-color-primary rounded-0"
 							>
 								<!--begin::Svg Icon | path: icons/stockholm/Shopping/Euro.svg-->
 								<span class="svg-icon svg-icon-3x me-n1">
@@ -253,12 +253,12 @@
 								</span>
 								<!--end::Svg Icon-->
 								<span class="fw-bolder fs-6 d-block pt-3"
-									>App Main</span
+									>Main</span
 								>
 							</a>
 							<a
 								href="/logout"
-								class="col text-center py-10 btn btn-active-color-primary rounded-0"
+								class="col text-center py-10   btn btn-active-color-primary rounded-0"
 							>
 								<!--begin::Svg Icon | path: icons/stockholm/Navigation/Sign-out.svg-->
 								<span class="svg-icon svg-icon-3x me-n1">

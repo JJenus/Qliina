@@ -80,7 +80,7 @@
 								<div class="row g-5">
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/overview"
+											href="/dashboard/overview"
 											class="card bg-light-success hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
@@ -99,7 +99,7 @@
 									</div>
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/laundry"
+											href="/dashboard/laundry"
 											class="card bg-light-danger hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
@@ -123,7 +123,7 @@
 								<div class="row g-5">
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/staffs"
+											href="/dashboard/staffs"
 											class="card bg-light-success hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
@@ -142,7 +142,7 @@
 									</div>
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/hire-staff"
+											href="/dashboard/hire-staff"
 											class="card bg-light-danger hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
@@ -166,7 +166,7 @@
 								<div class="row g-5">
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/issues"
+											href="/dashboard/issues"
 											class="card bg-light-warning hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
@@ -185,7 +185,7 @@
 									</div>
 									<div class="col-sm-6">
 										<a
-											href="app/dashboard/settings"
+											href="/dashboard/settings"
 											class="card bg-light-primary hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
