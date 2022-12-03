@@ -154,6 +154,19 @@
 						<!--begin::Row-->
 						<div class="row g-0">
 							<a
+								href="/app/main"
+								class="col text-center border-end py-10   btn btn-active-color-primary rounded-0"
+							>
+								<!--begin::Svg Icon | path: icons/stockholm/Shopping/Euro.svg-->
+								<span class="svg-icon svg-icon-3x me-n1">
+									<i class="bi fs-4x bi-app"></i>
+								</span>
+								<!--end::Svg Icon-->
+								<span class="fw-bolder fs-6 d-block pt-3"
+									>App</span
+								>
+							</a>
+							<a
 								href="/app/dashboard/account"
 								class="border-bottom col border-end text-center py-10   btn btn-active-color-primary rounded-0"
 							>
@@ -201,7 +214,7 @@
 								>
 							</a>
 							<a
-								href="/app/dashboard/settings"
+								href="/dashboard/settings"
 								class="col border-bottom border-end text-center py-10   btn btn-active-color-primary rounded-0"
 							>
 								<!--begin::Svg Icon | path: icons/stockholm/General/Settings-1.svg-->
@@ -243,19 +256,7 @@
 									>Settings</span
 								>
 							</a>
-							<a
-								href=""
-								class="col text-center border-end py-10   btn btn-active-color-primary rounded-0"
-							>
-								<!--begin::Svg Icon | path: icons/stockholm/Shopping/Euro.svg-->
-								<span class="svg-icon svg-icon-3x me-n1">
-									<i class="bi fs-4x bi-app"></i>
-								</span>
-								<!--end::Svg Icon-->
-								<span class="fw-bolder fs-6 d-block pt-3"
-									>Main</span
-								>
-							</a>
+							
 							<a
 								href="/logout"
 								class="col text-center py-10   btn btn-active-color-primary rounded-0"

@@ -1,6 +1,6 @@
 <script setup>
-	// import("@/assets/js/custom/general/wizard.js");
-    import Header from "@/components/dashboard/Header.vue";
+	import("@/assets/js/custom/general/wizard.js");
+	import Header from "@/components/dashboard/Header.vue";
 	import NavModal from "@/components/dashboard/NavModal.vue";
 	import Footer from "@/components/Footer.vue";
 
@@ -152,7 +152,7 @@
 							</li>
 							<li class="breadcrumb-item">dashboard</li>
 							<li class="breadcrumb-item text-dark">
-								hire-staff
+								hire
 							</li>
 						</ul>
 						<!--end::Breadcrumb-->
@@ -180,11 +180,11 @@
 								>
 									<!--begin::Nav-->
 									<div
-										class="stepper-nav d-flex flex-column py-15"
+										class="stepper-nav row py-15"
 									>
 										<!--begin::Step 1-->
 										<div
-											class="stepper-item current"
+											class="stepper-item col-6 col-sm-4 col-lg-12  current"
 											data-kt-stepper-element="nav"
 										>
 											<div class="stepper-wrapper">
@@ -210,7 +210,7 @@
 										<!--end::Step 1-->
 										<!--begin::Step 2-->
 										<div
-											class="stepper-item"
+											class="stepper-item col-6 col-sm-4 col-lg-12 "
 											data-kt-stepper-element="nav"
 										>
 											<div class="stepper-wrapper">
@@ -235,7 +235,7 @@
 										<!--end::Step 2-->
 										<!--begin::Step 3-->
 										<div
-											class="stepper-item"
+											class="stepper-item col-6 col-sm-4 col-lg-12 "
 											data-kt-stepper-element="nav"
 										>
 											<div class="stepper-wrapper">
@@ -261,7 +261,7 @@
 										<!--end::Step 3-->
 										<!--begin::Step 4-->
 										<div
-											class="stepper-item"
+											class="stepper-item col-6 col-sm-4 col-lg-12 "
 											data-kt-stepper-element="nav"
 										>
 											<div class="stepper-wrapper">
@@ -286,7 +286,7 @@
 										<!--end::Step 4-->
 										<!--begin::Step 5-->
 										<div
-											class="stepper-item"
+											class="stepper-item col-6 col-sm-4 col-lg-12 "
 											data-kt-stepper-element="nav"
 										>
 											<div class="stepper-wrapper">

@@ -142,7 +142,7 @@
 									</div>
 									<div class="col-sm-6">
 										<a
-											href="/dashboard/hire-staff"
+											href="/dashboard/hire"
 											class="card bg-light-danger hoverable min-h-125px shadow-none mb-5"
 										>
 											<div
