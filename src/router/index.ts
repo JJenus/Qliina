@@ -5,6 +5,7 @@ import LaundryVue from "@/views/app/Laundry.vue";
 import IssuesVue from "@/views/dashboard/Issues.vue";
 import LaundryDetails from "@/views/dashboard/LaundryDetails.vue";
 import HireVue from "@/views/dashboard/Hire.vue";
+import StaffsVue from "@/views/dashboard/Staffs.vue";
 
 
 const router = createRouter({
@@ -38,6 +39,11 @@ const router = createRouter({
 			path: "/dashboard/hire",
 			name: "hire",
 			component: HireVue,
+		},
+		{
+			path: "/dashboard/staffs",
+			name: "staffs",
+			component: StaffsVue,
 		},
 		{
 			path: "/:pathMatch(.*)*",
