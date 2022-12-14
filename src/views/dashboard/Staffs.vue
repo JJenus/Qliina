@@ -1,9 +1,7 @@
 <script setup>
-	import("@/assets/js/custom/general/wizard.js");
 	import Header from "@/components/dashboard/Header.vue";
 	import NavModal from "@/components/dashboard/NavModal.vue";
 	import Footer from "@/components/Footer.vue";
-
 	import Staff from "@/components/dashboard/staff/Staff.vue";
 
 	const staffs = [];
@@ -174,7 +172,7 @@
 					</div>
 					<!--end::Row-->
 
-					<Navbar />
+					<NavModal></NavModal>
 					<!--begin::Modals-->
 
 					<!--end::Modals-->
